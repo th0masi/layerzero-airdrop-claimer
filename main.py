@@ -3,6 +3,7 @@ from core.process import process_wallets, initialize_database
 from core.utils import load_file, setup_logger
 import asyncio
 
+from core.withdraw.okx_ import Okx
 from loguru import logger
 
 
@@ -41,6 +42,9 @@ async def main():
         proxies=proxies
     )
 
+    # Пылесос
+    okx = Okx(token='ZRO')
+    okx.okx_hoover()
 
 if __name__ == '__main__':
     setup_logger()

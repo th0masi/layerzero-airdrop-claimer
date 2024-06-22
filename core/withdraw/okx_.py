@@ -196,12 +196,12 @@ class Okx(Base):
                     }
                     self.exchange.private_post_asset_transfer(transfer_params)
 
-                    logger.success(f"OKX | Перевел {balance:.5f} "
+                    logger.success(f"OKX | Перевел {round(float(balance), 2)} "
                                    f"${token_name.upper()} на "
                                    f"основной аккаунт")
 
-        logger.info(f'OKX | Сплю 15 секунд...')
-        time.sleep(15)
+        logger.info(f'OKX | Выключил пылесос')
+        time.sleep(1)
 
     def check_withdraw_status(
             self,

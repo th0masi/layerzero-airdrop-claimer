@@ -4,6 +4,5 @@ aiohttp
 better_proxy
 ccxt
 aiosqlite
-Flask
-Flask-SocketIO
-eventlet
+loguru
+web3
