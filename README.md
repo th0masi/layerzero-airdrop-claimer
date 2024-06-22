@@ -18,7 +18,7 @@ _**If you are the 🤡Brian🤡 I'm thinking of, fuck off**_
 1. Установите [**Python 3.11**](https://www.python.org/downloads/release/python-3110/)  
 2. Откройте `cmd.exe`
 3. Введите команду `git clone https://github.com/th0masi/layerzero-airdrop-claimer.git`
-4. Далее команду `layerzero-airdrop-claimer`
+4. Далее команду `cd layerzero-airdrop-claimer`
 5. Установите зависимости командой `pip install -r requirements.txt`
 6. Найдите папку с скриптом, откройте
 7. В папку `data` поместите следующие данные: `private_keys.py` - приватные ключи, `deposit_addresses.txt` - депозитные адреса (биржевые)  
