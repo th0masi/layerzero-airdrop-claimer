@@ -1,0 +1,10 @@
+**/__pycache__/
+/Lib/
+/Scripts/
+/.idea/
+/include/
+/data/
+/logs/
+justfile
+pyvenv.cfg
+claims.db

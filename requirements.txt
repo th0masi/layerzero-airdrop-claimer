@@ -1,0 +1,9 @@
+fake_useragent
+aiohttp_socks
+aiohttp
+better_proxy
+ccxt
+aiosqlite
+Flask
+Flask-SocketIO
+eventlet
