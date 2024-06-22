@@ -79,7 +79,7 @@ async def process_wallets(
                 logger.warning(
                     f'{wallet} | На кошельке не найдена аллокация'
                 )
-                ti
+
             elif claim_status == ClaimStatus.ALREADY_CLAIMED:
                 logger.info(
                     f'{wallet} | Дроп уже был заклеймлен на '
