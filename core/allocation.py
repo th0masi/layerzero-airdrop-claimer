@@ -16,7 +16,7 @@ class Allocation:
         self.proxies = proxies
         self.api_url = (
             f'https://www.layerzero.foundation/'
-            f'api/allocation/{self.wallet}'
+            f'api/proof/{self.wallet}'
         )
 
     async def get_headers(self):
@@ -76,11 +76,15 @@ class Allocation:
                 f'{self.wallet} | Ошибка в запросе: {e}'
             )
 
-        zro_amount = response.get(
-            'zroAllocation', {}
-        ).get(
-            'asString', None
-        )
+        if response.get('error') == 'Record not found':
+            zro_amount = 0
+        else:
+            zro_amount = None
+        
+        if zro_amount != 0:
+            zro_amount = response.get(
+                'round2', None
+            )
 
         if zro_amount is None:
             logger.error(
